@@ -11,11 +11,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //This is a test to see if the branches work
-    }
-
-    @Override
-    protected void onCreate(){
-
     }
 }
