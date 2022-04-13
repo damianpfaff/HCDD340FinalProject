@@ -13,4 +13,9 @@ public class MainActivity extends AppCompatActivity {
 
         //This is a test to see if the branches work
     }
+
+    @Override
+    protected void onCreate(){
+
+    }
 }
