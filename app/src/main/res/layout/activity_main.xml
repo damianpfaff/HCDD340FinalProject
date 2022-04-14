@@ -4,39 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E2FAE6"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:text="Test Button"
+    <ImageView
+        android:id="@+id/settingsImage"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/appTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_settings_48px_svg" />
 
     <TextView
-        android:id="@+id/testText"
+        android:id="@+id/appTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FF9F4B"
-        android:text="Hello My Name is Damian"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:text="Athlead"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#3F51B5"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/settingsImage"
+        app:layout_constraintEnd_toStartOf="@+id/settingsImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profileIcon"
+        app:layout_constraintTop_toTopOf="@+id/settingsImage" />
+
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        app:layout_constraintBottom_toBottomOf="@+id/appTitle"
+        app:layout_constraintEnd_toStartOf="@+id/appTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/appTitle"
+        app:srcCompat="@drawable/default_avatar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
