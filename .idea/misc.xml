@@ -4,10 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/layout/myprofile_page.xml" value="0.2" />
         <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/layout/settings_page.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.12082066869300911" />
-        <entry key="app/src/main/res/layout/myprofile_page.xml" value="0.375" />
-        <entry key="app/src/main/res/layout/settings_page.xml" value="0.12082066869300911" />
       </map>
     </option>
   </component>
