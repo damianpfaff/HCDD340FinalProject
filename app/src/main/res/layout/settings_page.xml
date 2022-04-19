@@ -6,14 +6,17 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/settingsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings Page!"
+        android:text="Settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#574C4C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
 
     <Button
         android:id="@+id/backButton"
@@ -26,4 +29,30 @@
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/notificationsToggle"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:switchMinWidth="55dp"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Notifications"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsTitle" />
+
+    <Switch
+        android:id="@+id/darkmodeToggle"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:switchMinWidth="55dp"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Dark Mode"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationsToggle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
