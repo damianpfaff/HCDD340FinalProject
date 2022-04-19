@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.settingsImage).setOnClickListener(this);
+        findViewById(R.id.profileIcon).setOnClickListener(this);
 
 //        ImageView settingsIcon = (ImageView) findViewById(R.id.settingsImage);
 //        settingsIcon.bringToFront();
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.profileIcon:
+                handleMyProfile();
                 break;
             case R.id.settingsImage:
                 handleSettings();
@@ -51,6 +53,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, SettingsActivity.class);
 
         Log.d(TAG, "Settings button clicked");
+
+        //mGetStatus.launch(intent);
+        startActivity(intent);
+    }
+
+    private void handleMyProfile(){
+        Intent intent = new Intent(this, MyProfileActivity.class);
+
+        Log.d(TAG, "Profile button clicked");
 
         //mGetStatus.launch(intent);
         startActivity(intent);
