@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E2FAE6"
+    android:background="#EAEAEA"
     tools:context=".MainActivity">
 
     <ImageView
@@ -14,17 +14,17 @@
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/appTitle"
+        app:layout_constraintStart_toEndOf="@+id/pageTitle"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_settings_48px_svg" />
 
     <TextView
-        android:id="@+id/appTitle"
+        android:id="@+id/pageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Athlead"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#3F51B5"
+        android:text="Home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#504E4E"
         app:layout_constraintBottom_toBottomOf="@+id/settingsImage"
         app:layout_constraintEnd_toStartOf="@+id/settingsImage"
         app:layout_constraintHorizontal_bias="0.5"
@@ -35,10 +35,34 @@
         android:id="@+id/profileIcon"
         android:layout_width="120px"
         android:layout_height="120px"
-        app:layout_constraintBottom_toBottomOf="@+id/appTitle"
-        app:layout_constraintEnd_toStartOf="@+id/appTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/pageTitle"
+        app:layout_constraintEnd_toStartOf="@+id/pageTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/appTitle"
+        app:layout_constraintTop_toTopOf="@+id/pageTitle"
         app:srcCompat="@drawable/default_avatar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageTitle"
+        app:srcCompat="@drawable/athlead_logo" />
+
+    <TextView
+        android:id="@+id/mottoLabel"
+        android:layout_width="267dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Show Off Your Skills or Find the Next Top Talent!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#252525"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
