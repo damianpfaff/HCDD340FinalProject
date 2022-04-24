@@ -75,7 +75,7 @@
         android:id="@+id/playerNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
         android:text="Player Name"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -83,17 +83,17 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilePic" />
+        app:layout_constraintTop_toBottomOf="@+id/footballProfilePic2" />
 
     <ImageView
-        android:id="@+id/profilePic"
-        android:layout_width="241dp"
-        android:layout_height="164dp"
+        android:id="@+id/footballProfilePic2"
+        android:layout_width="253dp"
+        android:layout_height="159dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img" />
+        app:srcCompat="@drawable/football_pic" />
 
     <TextView
         android:id="@+id/achievementsLabel"

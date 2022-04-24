@@ -75,7 +75,7 @@
         android:id="@+id/playerNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
         android:text="Saeed Abdullah"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -83,17 +83,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilePic" />
-
-    <ImageView
-        android:id="@+id/profilePic"
-        android:layout_width="241dp"
-        android:layout_height="164dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img" />
+        app:layout_constraintTop_toBottomOf="@+id/footballProfilePic" />
 
     <TextView
         android:id="@+id/achievementsLabel"
@@ -219,5 +209,15 @@
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="@+id/achievement2Label"
         app:layout_constraintTop_toTopOf="@+id/editTextAchievements" />
+
+    <ImageView
+        android:id="@+id/footballProfilePic"
+        android:layout_width="253dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/football_pic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
