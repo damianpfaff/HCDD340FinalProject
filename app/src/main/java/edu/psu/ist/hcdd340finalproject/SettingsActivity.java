@@ -53,8 +53,8 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         //if(on){
         AlertDialog.Builder notificationsDialog = new AlertDialog.Builder(this);
         notificationsDialog.setTitle("Check Device Settings");
-        notificationsDialog.setMessage("Please ensure that notifications for this application are turned on in your device settings. Otherwise, notifications will not be sent through.");
-        notificationsDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+        notificationsDialog.setMessage(R.string.notifications_dialog_message);
+        notificationsDialog.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 //nothing

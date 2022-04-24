@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">HCDD340FinalProject</string>
+
+    <string name="notifications_dialog_message">Please ensure that notifications for this application are turned on in your device settings. Otherwise, notifications will not be sent through.</string>
+
+    <string name="menu_info">Info</string>
+    <string name="dialog_message">
+        <b>Show off your skills or find the next top talent!</b>
+        \n
+        \n
+        Athlead allows high school athletes to show off their talents on their profile pages and allows college recruiters to easily find high school prospects.</string>
 </resources>
