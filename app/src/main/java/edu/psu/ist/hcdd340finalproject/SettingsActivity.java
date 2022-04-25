@@ -11,6 +11,8 @@ import android.view.View;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class SettingsActivity extends AppCompatActivity implements View.OnClickListener{
 
     private static final String TAG = "SETTINGS_ACTIVITY";
@@ -23,6 +25,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.cancelButton).setOnClickListener(this);
 
         findViewById(R.id.notificationsToggle).setOnClickListener(this);
+        findViewById(R.id.darkmodeToggle).setOnClickListener(this);
 
     }
 
@@ -84,6 +87,13 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
             //boolean on = ((Switch) view).isChecked();
             //notificationsToggle(findViewById(R.id.notificationsToggle), Switch);
             notificationsToggle();
+        } else if (eventSourceId == R.id.darkmodeToggle){
+            View otherView = findViewById(R.id.darkmodeToggle);
+            //add a snackbar on toggle of dark mode switch
+            Snackbar.make(otherView,
+                    "Dark mode not implemented yet", Snackbar.LENGTH_LONG).setBackgroundTint(getColor(
+                            R.color.design_default_color_error))
+                    .show();
         }
     }
 

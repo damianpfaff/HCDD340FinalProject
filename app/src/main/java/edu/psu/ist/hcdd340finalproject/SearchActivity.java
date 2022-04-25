@@ -72,7 +72,7 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view) {
         int eventSourceId = view.getId();
-        if (eventSourceId == R.id.cancelButton) {
+        if (eventSourceId == R.id.backButtonOnSearch) {
             Log.d(TAG, "Back button was selected");
             handleBack();
         } else if(eventSourceId == R.id.goButton) {
@@ -84,7 +84,7 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
     private void handleBack() {
         Intent intent = new Intent(this, MainActivity.class);
 
-        Log.d(TAG, "Edit profile button was selected");
+        Log.d(TAG, "Back button was selected");
 
         //mGetStatus.launch(intent);
         startActivity(intent);
