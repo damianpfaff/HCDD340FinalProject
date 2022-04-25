@@ -11,18 +11,16 @@ import android.view.View;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MyProfileActivity extends AppCompatActivity implements View.OnClickListener {
+public class SearchActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = "MYPROFILE_ACTIVITY";
+    private static final String TAG = "SEARCH_ACTIVITY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.myprofile_page);
+        setContentView(R.layout.search_page);
 
-        findViewById(R.id.editProfileButton).setOnClickListener(this);
-        findViewById(R.id.cancelButton).setOnClickListener(this);
-
+        findViewById(R.id.backButtonOnSearch).setOnClickListener(this);
     }
 
     //creating the menu in this class
@@ -74,18 +72,17 @@ public class MyProfileActivity extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View view) {
         int eventSourceId = view.getId();
-
-        if (eventSourceId == R.id.cancelButton){
+        if (eventSourceId == R.id.cancelButton) {
             Log.d(TAG, "Back button was selected");
-            setResult(RESULT_CANCELED);
-            finish();
-        } else if (eventSourceId == R.id.editProfileButton){
-            handleEditProfile();
+            handleBack();
+        } else if(eventSourceId == R.id.goButton) {
+            //fill this
         }
     }
 
-    private void handleEditProfile() {
-        Intent intent = new Intent(this, EditProfileActivity.class);
+    //handles what happens when the back button is clicked
+    private void handleBack() {
+        Intent intent = new Intent(this, MainActivity.class);
 
         Log.d(TAG, "Edit profile button was selected");
 

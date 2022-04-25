@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.settingsImage).setOnClickListener(this);
         findViewById(R.id.profileIcon).setOnClickListener(this);
+        findViewById(R.id.searchButton).setOnClickListener(this);
 
 //        ImageView settingsIcon = (ImageView) findViewById(R.id.settingsImage);
 //        settingsIcon.bringToFront();
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        });
     }
 
+    //creating the menu in this class
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
@@ -49,10 +51,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.menu_info:
                 showInfo();
                 return true;
+            case R.id.menu_home:
+                returnHome();
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
+    //makes the home button open the main activity page
+    private void returnHome() {
+        Intent intent = new Intent(this, MainActivity.class);
+
+        Log.d(TAG, "Edit profile button was selected");
+
+        //mGetStatus.launch(intent);
+        startActivity(intent);
+    }
+
+    //opens a dialog with the app info
     private void showInfo() {
         AlertDialog.Builder infoDialog = new AlertDialog.Builder(this);
         infoDialog.setTitle("App Information");
@@ -61,10 +77,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         infoDialog.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                // nothing
             }
         });
 
+        //shows the dialog box
         infoDialog.show();
     }
 
@@ -77,7 +93,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.settingsImage:
                 handleSettings();
                 break;
+            case R.id.searchButton:
+                handleSearch();
         }
+    }
+
+    private void handleSearch() {
+        Intent intent = new Intent(this, SearchActivity.class);
+
+        Log.d(TAG, "Search button clicked");
+
+        //mGetStatus.launch(intent);
+        startActivity(intent);
     }
 
     private void handleSettings() {

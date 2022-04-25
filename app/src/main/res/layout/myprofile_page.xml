@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/hudlLinkLabel" />
 
     <Button
-        android:id="@+id/backButton"
+        android:id="@+id/cancelButton"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
         android:layout_marginBottom="8dp"
         android:text="Edit Profile"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/backButton"
+        app:layout_constraintEnd_toStartOf="@+id/cancelButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAchievements" />

@@ -3,6 +3,30 @@
 
     <string name="notifications_dialog_message">Please ensure that notifications for this application are turned on in your device settings. Otherwise, notifications will not be sent through.</string>
 
+    <string name="footballColumn">Football Recruits</string>
+    <string name="baseballColumn">Baseball Recruits</string>
+    <string name="basketballColumn">Basketball Recruits</string>
+
+    <string name="athlete1">J. Halpert</string>
+    <string name="athlete2">M. Scott</string>
+    <string name="athlete3">T. Flenderson</string>
+    <string name="athlete4">D. Schrute</string>
+    <string name="athlete5">A. Bernard</string>
+    <string name="athlete6">K. Malone</string>
+    <string name="athlete7">S. Hudson</string>
+    <string name="athlete8">O. Martinez</string>
+    <string name="athlete9">D. Philbin</string>
+
+    <string name="position1">Quarterback</string>
+    <string name="position2">Wide Receiver</string>
+    <string name="position3">Cornerback</string>
+    <string name="position4">Starting Pitcher</string>
+    <string name="position5">Starting Pitcher</string>
+    <string name="position6">3rd Baseman</string>
+    <string name="position7">Shooting Guard</string>
+    <string name="position8">Point Guard</string>
+    <string name="position9">Small Forward</string>
+
     <string name="menu_info">Info</string>
     <string name="dialog_message">
         <b>Show off your skills or find the next top talent!</b>

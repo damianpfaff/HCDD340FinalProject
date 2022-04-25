@@ -7,4 +7,9 @@
         android:icon="@drawable/ic_baseline_info_24"
         android:title="@string/menu_info"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        app:showAsAction="always" />
 </menu>
