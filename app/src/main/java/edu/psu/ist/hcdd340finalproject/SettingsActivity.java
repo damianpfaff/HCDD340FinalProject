@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Switch;
+import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +29,16 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.notificationsToggle).setOnClickListener(this);
         findViewById(R.id.darkmodeToggle).setOnClickListener(this);
 
+        Intent intent = getIntent();
+
+        int backgroundColor = intent.getIntExtra(MainActivity.EXTRA_BACKGROUND_COLOR, R.color.app_background);
+
+        boolean changeTheme = intent.getBooleanExtra(MainActivity.EXTRA_BACKGROUND_COLOR, false);
+
+        Switch toggleTheme = findViewById(R.id.notificationsToggle);
+        toggleTheme.setChecked(changeTheme);
+
+        setBackgroundColor(backgroundColor);
     }
 
     //creating the menu in this class
@@ -112,6 +124,10 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         });
 
         notificationsDialog.show();
+    }
+
+    private void setBackgroundColor(int colorId) {
+        findViewById(R.id.root_layout_settings_activity).setBackgroundColor(getColor(colorId));
     }
 
 }

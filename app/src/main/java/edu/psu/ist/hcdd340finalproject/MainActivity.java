@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -17,6 +18,11 @@ import com.google.android.material.snackbar.Snackbar;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "ATHLEAD_ACTIVITY";
+    public static final String EXTRA_BACKGROUND_COLOR = "BACKGROUND_COLOR";
+
+    private SharedPreferences sharedPreferences;
+    private final static String SHARED_PREF_BACKGROUND_COLOR_KEY = "BACKGROUND_COLOR";
+    private final static int DEFAULT_BACKGROUND_COLOR_ID = R.color.app_background;
     //hi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                startActivity(myIntent);
 //            }
 //        });
+        //sharedPreferences = getSharedPreferences(getString(R.string.shared_pref_), MODE_PRIVATE);
     }
 
     //creating the menu in this class
