@@ -68,7 +68,7 @@
         android:layout_width="267dp"
         android:layout_height="141dp"
         android:layout_marginTop="8dp"
-        android:fontFamily="cursive"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="Show Off Your Skills or Find the Next Top Talent!"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
