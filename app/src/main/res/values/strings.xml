@@ -3,6 +3,11 @@
 
     <string name="notifications_dialog_message">Please ensure that notifications for this application are turned on in your device settings. Otherwise, notifications will not be sent through.</string>
 
+    <string name="link">hudle.com/SaeedAbdullah</string>
+    <string name="hs">Smart People High School</string>
+    <string name="sport">Football</string>
+    <string name="pos">Left Guard</string>
+    <string name="height">6\'10&quot;/294lbs</string>
     <string name="footballColumn">Football Recruits</string>
     <string name="baseballColumn">Baseball Recruits</string>
     <string name="basketballColumn">Basketball Recruits</string>

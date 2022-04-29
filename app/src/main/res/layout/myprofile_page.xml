@@ -68,11 +68,11 @@
         android:textColor="#323131"
         app:layout_constraintBottom_toTopOf="@+id/highSchoolLabel"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playerNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/playertxt"
         app:layout_constraintVertical_chainStyle="spread" />
 
     <TextView
-        android:id="@+id/playerNameLabel"
+        android:id="@+id/playertxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -123,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="hudle.com/SaeedAbdullah"
+        android:text="@string/link"
         android:textColor="#323131"
         app:layout_constraintBottom_toBottomOf="@+id/hudlLinkLabel"
         app:layout_constraintStart_toEndOf="@+id/hudlLinkLabel" />
@@ -133,7 +133,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Smart People High School"
+        android:text="@string/hs"
         android:textColor="#323131"
         app:layout_constraintBaseline_toBaselineOf="@+id/highSchoolLabel"
         app:layout_constraintStart_toEndOf="@+id/highSchoolLabel" />
@@ -143,7 +143,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Football"
+        android:text="@string/sport"
         android:textColor="#323131"
         app:layout_constraintBaseline_toBaselineOf="@+id/sportLabel"
         app:layout_constraintStart_toEndOf="@+id/sportLabel" />
@@ -153,7 +153,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Left Guard"
+        android:text="@string/pos"
         android:textColor="#323131"
         app:layout_constraintBaseline_toBaselineOf="@+id/positionLabel"
         app:layout_constraintStart_toEndOf="@+id/positionLabel" />

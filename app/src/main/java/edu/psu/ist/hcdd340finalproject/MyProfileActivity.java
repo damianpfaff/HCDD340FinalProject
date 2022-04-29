@@ -2,11 +2,13 @@ package edu.psu.ist.hcdd340finalproject;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +25,24 @@ public class MyProfileActivity extends AppCompatActivity implements View.OnClick
         findViewById(R.id.editProfileButton).setOnClickListener(this);
         findViewById(R.id.cancelButton).setOnClickListener(this);
 
+
+        Intent intent = getIntent();
+        TextView textView = findViewById(R.id.hudlLinkCompleted);
+        textView.setText(intent.getStringExtra(EditProfileActivity.LINK));
+        textView = findViewById(R.id.highSchoolCompleted);
+        textView.setText(intent.getStringExtra(EditProfileActivity.HIGHSCHOOL));
+        textView = findViewById(R.id.sportCompleted);
+        textView.setText(intent.getStringExtra(EditProfileActivity.SPORT));
+        textView = findViewById(R.id.positionCompleted);
+        textView.setText(intent.getStringExtra(EditProfileActivity.POSITION));
+        textView = findViewById(R.id.heightWeightCompleted);
+        textView.setText(intent.getStringExtra(EditProfileActivity.HEIGHT));
+    }
+    public static void setFields(View view, String link){
+        SharedPreferences prefs = view.getContext().getSharedPreferences("MyProfileActivity", 0);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("link", link);
+        editor.commit();
     }
 
     //creating the menu in this class
