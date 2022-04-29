@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +16,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class EditProfileActivity extends AppCompatActivity implements View.OnClickListener{
 
     private static final String TAG = "EDITPROFILE_ACTIVITY";
+    public static final String LINK = "HUDDLE_LINK";
+    public static final String HIGHSCHOOL = "HIGHSCHOOL";
+    public static final String SPORT = "SPORT";
+    public static final String POSITION = "POSITION";
+    public static final String HEIGHT = "HEIGHT";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +28,9 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.editprofile_page);
 
         findViewById(R.id.cancelButton).setOnClickListener(this);
+        findViewById(R.id.savebtn).setOnClickListener(this);
+
+
 
     }
 
@@ -69,6 +79,8 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
         //shows the dialog box
         infoDialog.show();
     }
+    EditText eText, nText, sText, pText, hText, hsText;
+
 
     @Override
     public void onClick(View view) {
@@ -79,6 +91,31 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
             Log.d(TAG, "Cancel button was selected");
             setResult(RESULT_CANCELED);
             finish();
+        }
+        if (eventSourceId == R.id.savebtn){
+//            SharedPreferences prefs = view.getSharedPreferences("MyProfileActivity", 0);
+//            return prefs.getString("link","");
+            EditText eText = (EditText) findViewById(R.id.linktxt);
+            String linkText = eText.getEditableText().toString();
+            EditText hsText = (EditText) findViewById(R.id.hstxt);
+            String hs = hsText.getEditableText().toString();
+            EditText sText = (EditText) findViewById(R.id.sporttxt);
+            String sport = sText.getEditableText().toString();
+            EditText pText = (EditText) findViewById(R.id.positiontxt);
+            String pos = pText.getEditableText().toString();
+            EditText hText = (EditText) findViewById(R.id.heighttxt);
+            String height = hText.getEditableText().toString();
+            Intent intent = new Intent(this, MyProfileActivity.class);
+            intent.putExtra(LINK, linkText);
+            intent.putExtra(HIGHSCHOOL, hs);
+            intent.putExtra(SPORT, sport);
+            intent.putExtra(POSITION, pos);
+            intent.putExtra(HEIGHT, height);
+            startActivity(intent);
+
+            Log.d(TAG, linkText + hs + sport + pos + height);
+            Log.d(TAG, "save button was selected");
+
         }
     }
     @Override
