@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/layout/settings_page.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/editprofile_page.xml" value="0.5023459512815842" />
-        <entry key="app/src/main/res/layout/myprofile_page.xml" value="0.4485969365651644" />
+        <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/layout/editprofile_page.xml" value="0.19384057971014493" />
+        <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/layout/myprofile_page.xml" value="0.22" />
+        <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/layout/search_page.xml" value="0.33" />
+        <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/layout/settings_page.xml" value="0.22" />
+        <entry key="..\:/Users/bbs99/AndroidStudioProjects/HCDD340FinalProject/app/src/main/res/menu/main_menu.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/editprofile_page.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/myprofile_page.xml" value="0.25052083333333336" />
+        <entry key="app/src/main/res/layout/settings_page.xml" value="0.12183383991894631" />
       </map>
     </option>
   </component>
